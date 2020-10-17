@@ -18,7 +18,8 @@ IDENTIFICADOR {LETRA}({DIGITO}|{LETRA})*
 %%
 \n                          num_lineas++;
 [ \t]                       ;
-
-{IDENTIFICADOR}             return IDENTIFICADOR;
+"("                         return INI_PARENTESIS;
+")"                         return FIN_PARENTESIS;
+{IDENTIFICADOR}             return ID;
 .                           printf("Simbolo erroneo: '%s' en linea: %d\n", yytext, numlinea);
 %%
