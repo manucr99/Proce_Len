@@ -49,6 +49,6 @@ OPE_UNI_BIN ("no" | "!" | "-")
 ({ENTERO} | {REAL})         return NUMERO;
 {IDENTIFICADOR}             return ID;
 
-.                           printf("Simbolo erroneo: '%s' en linea: %d\n", yytext, numlinea);
+.                           printf("Simbolo erroneo: '%s' en linea: %d\n", yytext, num_lineas);
 
 %%
