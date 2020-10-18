@@ -1,4 +1,4 @@
-{%
+%{
 #include <stdlib.h>
 #include <string.h>
 #include "tokens.h"
@@ -41,12 +41,14 @@ OPE_UNI_BIN ("no" | "!" | "-")
 "mientras"                  return BUCLE_MIENTRAS;
 "entonces"                  return ENCONCES;
 "lista de"                  return DECL_LISTAS;
+
 {OPE_ARITMETICA}            return OP_ARITMETICA;
 {OPE_LOGICO}                return OP_LOGICO;
 {OPE_UNARIO}                return OP_UNARIO;
 {TIPO_VARIABLE}             return TIPO_VAR;
 ({ENTERO} | {REAL})         return NUMERO;
 {IDENTIFICADOR}             return ID;
+
 .                           printf("Simbolo erroneo: '%s' en linea: %d\n", yytext, numlinea);
 
 %%

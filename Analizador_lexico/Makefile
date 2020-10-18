@@ -1,4 +1,4 @@
-CFLAGS = -lfl
+FLAGS = -lfl
 FUENTE = fuente.c
 
 
