@@ -1,6 +1,6 @@
 /**
  * @file tokens.h
- * @author Yunhao Lin, Jesus Alvarez, Manuel 
+ * @author Yunhao Lin, Jesus Alvarez, Manuel Castellon, Pablo Duenas
  * @brief Este fichero contiene las declaraciones de tokens que posteriormente
  *         sera usado por el analizador lexico
  * @version 0.1
